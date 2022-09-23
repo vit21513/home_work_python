@@ -7,7 +7,7 @@
 # - 1 -> нет
 
 
-def Days(num):
+def days(num):
     if num < 1 or num > 7:
         print("Вы ввели некоректное число")
     elif num >= 6:
@@ -16,6 +16,6 @@ def Days(num):
         print("это рабочий день")
 
 
-days = int(input("Введите день недели "))
+day = int(input("Введите день недели "))
 
-Days(days)
+days(day)
