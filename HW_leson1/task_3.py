@@ -19,11 +19,11 @@ def quarter(x,y):
             print("точка лежит на оси Y")  
         elif x!=0 and y==0:
             print("точка лежит на оси X")        
-        elif (x>0 and y>0):
+        elif x>0 and y>0:
             print("первая четверть")
-        elif (x<0 and y>0):
+        elif x<0 and y>0:
             print("вторая четверть") 
-        elif (x<0 and y<0):
+        elif x<0 and y<0:
             print("третья четверть")
         else:
             print("четвертая четверть")
