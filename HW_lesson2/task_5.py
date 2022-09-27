@@ -2,21 +2,21 @@
 
 import random
 
-spisok= []
+spisok = []
 
-for i in range(0,21):
-    spisok.append(random.randint(1,100))
-
+for i in range(0, 21):
+    spisok.append(random.randint(1, 100))
 
 
 def sort(array):
-    res=[]
+    res = []
     for i in array:
-        if i%2 ==0:
+        if i % 2 == 0:
             res.append(i)
     res.sort()
-    return res        
-    
+    return res
+
+
 print(f' список до сортировки {spisok}')
 
-print(f' список после сортировки {sort(spisok)}') 
+print(f' список после сортировки {sort(spisok)}')

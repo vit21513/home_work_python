@@ -4,12 +4,14 @@
 
 number = int(input("Введите  число N:  "))
 
+
 def res_number_n(num):
-    res= 1
-    multi=[]
-    for i in range(1,num+1):
-        res*=i
+    res = 1
+    multi = []
+    for i in range(1, num+1):
+        res *= i
         multi.append(res)
     return multi
+
 
 print(res_number_n(number))
