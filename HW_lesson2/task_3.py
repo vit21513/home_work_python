@@ -12,4 +12,4 @@ def list_numbers(num):
     return res
 
 
-print(list_numbers(number))
+print(sum(list_numbers(number)))
