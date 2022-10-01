@@ -6,16 +6,18 @@
 
 def nego_fib(n):
     nums = []
-    a = 1
-    b = 1
-    for i in range(n):
-        nums.append(a)
-        a, b = b, a + b
-    a = 0
-    b = 1
+    num1 = 0
+    num2 = 1
     for i in range(n+1):
-        nums.insert(0, a)
-        a, b = b, a - b
+        nums.append(num1)
+        num1, num2 = num2, num1 - num2
+    nums.reverse()
+    num1 = 1
+    num2 = 1
+    for i in range(n):
+        nums.append(num1)
+        num1, num2 = num2, num1 + num2
+      
     return nums
 
 
