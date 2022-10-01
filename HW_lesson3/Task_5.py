@@ -10,7 +10,7 @@ def nego_fib(n):
     num2 = 1
     for i in range(n+1):
         nums.append(num1)
-        num1, num2 = num2, num1 - num2
+        num1, num2 = num2, num1 - num2   
     nums.reverse()
     num1 = 1
     num2 = 1
