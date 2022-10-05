@@ -5,15 +5,15 @@
 # - 3 -> 11
 # - 2 -> 10
 
-def num_to_bin(nem):
+def num_to_bin(num):
     res = ''
-    if nem == 0:
+    if num == 0:
         return
     else:
-        res = res+str(nem % 2)
-        num_to_bin(nem//2)
+        res = res+str(num % 2)
+        num_to_bin(num//2)
         print(res, end='')
-    return
+    
 
 
 number = int(input("Введите число:"))
