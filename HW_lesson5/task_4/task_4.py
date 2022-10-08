@@ -1,10 +1,8 @@
 # Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
-# WWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW  9W3B24W1B14W
 
 
-not_compres_text = "WWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW"
 
-compres_text = "9W3B24W1B14W"
+
 
 
 def compres_rle(text):
@@ -39,6 +37,21 @@ def decompress_text(text):
     return result
 
 
-print(compres_rle(not_compres_text))
 
-print(decompress_text(compres_text))
+with open('not_compres.txt','r') as file:
+    not_compres = file.readline()
+
+result_compress= compres_rle(not_compres)    
+
+with open('result_compres.txt', 'w') as file:
+    file.write(f'{result_compress}')
+
+   
+
+with open('compres.txt','r') as file:
+     compres = file.readline()
+result_decompress= decompress_text(compres)  
+
+with open('decompres.txt', 'w') as file:
+     file.write(f'{result_decompress}')
+
