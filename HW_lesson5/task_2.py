@@ -79,7 +79,7 @@ def main_game(bot=False):
     
     print(f'\nПо результам жеребьевки первым ходит игрок {one_player}')
 
-    candy_quant = 2021                                                            # число конфет
+    candy_quant = 120                                                            # число конфет
     allcandy_first = 0
     allcandy_second = 0
     last_player1 = 0                                                           # запись последнего хода

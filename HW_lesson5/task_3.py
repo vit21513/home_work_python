@@ -81,6 +81,7 @@ def main_game(pol):
       input_field_num(n, pole)
       if check_win(pol):
         print("Поздравляю!! Выиграл крестик")
+        print_field(pole)
         break
     else:
       n=2
@@ -88,9 +89,11 @@ def main_game(pol):
       input_field_num(n, pole)
       if check_win(pol):
         print("Поздравляю!! Выиграл нолик")
+        print_field(pole)
         break
     if count==9:
       print("Боевая ничья")
+      print_field(pole)
     count+=1  
 
 
