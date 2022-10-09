@@ -76,7 +76,7 @@ def main_game(bot=False):
         one_player,two_player= Name_player1,Name_player2
     else:
         one_player,two_player= Name_player2,Name_player1
-    one_player, two_player = Name_player1, Name_player2
+    
     print(f'\nПо результам жеребьевки первым ходит игрок {one_player}')
 
     candy_quant = 2021                                                            # число конфет
