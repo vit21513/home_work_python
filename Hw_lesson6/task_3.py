@@ -27,7 +27,7 @@ import random
 range_num, num = 10, 10
 
 number = [random.randint(0, range_num) for num in range(num)]
-print(number)
+
 sort_unical = [x for x in number if number.count(x) == 1]
 print(f'исходный список {number} список неповторяющихся элементов  {sort_unical}')
 
