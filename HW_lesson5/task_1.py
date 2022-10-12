@@ -11,5 +11,5 @@ def sort_text(array):
 
 
 sa = 'абвгдейка кинотеатр забвеность питон забвение прикол абвер'
-sort = sa.split()
-print(sort_text(sort))
+sort1 = sa.split()
+print(sort_text(sort1))
