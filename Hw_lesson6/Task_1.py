@@ -12,11 +12,9 @@ multi= set(spisok)
 
 
 for i in  multi:
-    index= spisok.count(i)
-    slovar[i]=index
+    slovar[i]=spisok.count(i)
 
 print(slovar)    
-
 
 # вариант с  dict complication
 

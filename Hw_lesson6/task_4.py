@@ -15,8 +15,7 @@
 #             res.append(i)
 #         else:
 #             res2.append(i)    
-#     res2.sort()
-#     res.sort()
+#     
 #     res.extend(res2)
 #     return res
 
