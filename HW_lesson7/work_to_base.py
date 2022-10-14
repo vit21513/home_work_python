@@ -5,7 +5,7 @@ def read_data():
         data = file.readlines()
         data_phone=[]
         for line in data:
-            data_phone.append(line[0:-1])
+            data_phone.append(line)
         return data_phone
 
 
@@ -21,4 +21,5 @@ def export_to_csv():
     baza= read_data()
     with open('export.csv', 'w',encoding="utf-8") as file:
         for i in baza:
-            file.write(f'{i}\n')   
+            file.write(f'{i}\n')
+    print("Экспорт завершен")           

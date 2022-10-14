@@ -13,7 +13,10 @@ def delete_phone_contact():
     baza= read_data()
     for i in baza:
         if phon_contact in i:
-            baza.remove(i)
+            print(f'По заданным критериям найден абонент {i}')
+            in_choice= input('удалить? (да/нет):')
+            if in_choice=='да' or 'Да':
+                baza.remove(i)
     with open('database.txt', 'w',encoding="utf-8") as file:
         for i in baza:
             file.write(f'{i}\n')   
