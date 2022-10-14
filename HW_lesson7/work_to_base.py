@@ -12,7 +12,7 @@ def read_data():
 def write_base(data):
 
     with open('database.txt', 'a',encoding="utf-8") as file:
-     file.write(f'{data}\n')
+     file.write(f'{data}')
      
 
       
@@ -21,5 +21,5 @@ def export_to_csv():
     baza= read_data()
     with open('export.csv', 'w',encoding="utf-8") as file:
         for i in baza:
-            file.write(f'{i}\n')
+            file.write(f'{i}')
     print("Экспорт завершен")           

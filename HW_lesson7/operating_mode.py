@@ -19,7 +19,7 @@ def delete_phone_contact():
                 baza.remove(i)
     with open('database.txt', 'w',encoding="utf-8") as file:
         for i in baza:
-            file.write(f'{i}\n')   
+            file.write(f'{i}')   
 
 
 
