@@ -12,7 +12,7 @@ def read_data():
 def write_base(data):
 
     with open('database.txt', 'a',encoding="utf-8") as file:
-     file.write(f'{data}')
+     file.write(f'{data}\n')
      
 
       
