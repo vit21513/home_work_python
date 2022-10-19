@@ -23,3 +23,5 @@ def export_to_csv():
         for i in baza:
             file.write(f'{i}')
     print("Экспорт завершен")           
+
+
