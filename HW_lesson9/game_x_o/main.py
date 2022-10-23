@@ -1,14 +1,6 @@
 
-from tictactoe.egtb import Generator
-import functools, operator
+
 from tictactoe import Board
-
-def creaty_table_win():
-
-    dimensions = (3, 3)
-    total_squares = functools.reduce(operator.mul, dimensions)
-    for index in reversed(range(total_squares + 1)):
-        Generator(dimensions, 3, index)
 
 
 
@@ -46,6 +38,6 @@ def game(board):
             
                 
 
-#creaty_table_win()      # для создания  файлов проверки на выигрыш
+
 desk = Board((3, 3), 3)
 game(desk)
