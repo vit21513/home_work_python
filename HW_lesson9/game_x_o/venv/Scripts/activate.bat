@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\vit21\OneDrive\Документы\УЧЕБА\python\home_work\HW_lesson9\game_x_o\venv
+set VIRTUAL_ENV=D:\teach\home_work\HW_lesson9\game_x_o\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
