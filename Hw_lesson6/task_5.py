@@ -20,6 +20,7 @@
 
 spisok = [2, 3, 5, 9, 3]
 
-res =[spisok[x] for x in range(len(spisok)-1) if x % 2 != 0]
+res = [spisok[x] for x in range(len(spisok) - 1) if x % 2 != 0]
 
-print(f'сумма элементов списка, стоящих на нечётной позиции составляет {sum(list(res))}')
+print(
+    f'сумма элементов списка, стоящих на нечётной позиции составляет {sum(list(res))}')

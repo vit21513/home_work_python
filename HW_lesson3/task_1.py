@@ -17,4 +17,5 @@ def summ_negativ_position(array):
     return result
 
 
-print(f'сумма элементов списка, стоящих на нечётной позиции составляет {summ_negativ_position(spisok)}')
+print(
+    f'сумма элементов списка, стоящих на нечётной позиции составляет {summ_negativ_position(spisok)}')

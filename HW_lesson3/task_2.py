@@ -3,16 +3,17 @@
 # *Пример:*
 
 import math
+
+
 def first_end_ellem(array):
 
-    index = len(array)-1
+    index = len(array) - 1
     result = []
     res = 1
-    #index = index//2
-    print(index)
-    inde=math.ceil(index/2)
+    # inde=math.ceil(index/2)
+    inde = (index // 2) + 1
     for i in range(inde):
-        res = array[i]*array[(i+1)*-1]
+        res = array[i] * array[(i + 1) * -1]
         result.append(res)
     return result
 
@@ -23,4 +24,4 @@ spisok3 = [2, 3, 5, 6, 2, 3]     # 6 6 30
 spisok4 = [2, 3, 5, 6, 2, 3, 5, 2]   # 4 15 15 12
 
 
-print(first_end_ellem(spisok))
+print(first_end_ellem(spisok2))

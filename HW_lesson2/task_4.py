@@ -7,15 +7,16 @@ def new_spisok(num, p1, p2, p3):
     res = []
     poz = [p1, p2, p3]
     result = 1
-    for i in range(-num, num+1):
+    for i in range(-num, num + 1):
         res.append(i)
-    maxindex = len(res)-1
+    maxindex = len(res) - 1
     minidex = len(res)
     for n in poz:
         if n > maxindex or n < -minidex:
             return print("неверно указали значение индекса ")
         result *= res[n]
-    return print(f' В списке {res}, произведение значений с индексами {p1},{p2},{p3} составляет {result}')
+    return print(
+        f' В списке {res}, произведение значений с индексами {p1},{p2},{p3} составляет {result}')
 
 
 number = int(input("Введите  число N:  "))

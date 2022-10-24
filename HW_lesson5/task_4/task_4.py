@@ -1,13 +1,8 @@
 # Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
 
 
-
-
-
-
 def compres_rle(text):
 
-    
     result = ''
     pred_simbol = ''
     index = 1
@@ -20,7 +15,7 @@ def compres_rle(text):
         else:
             index += 1
     else:
-        result += str(index)+pred_simbol
+        result += str(index) + pred_simbol
     return result
 
 
@@ -32,26 +27,23 @@ def decompress_text(text):
         if char.isdigit():
             index += char
         else:
-            result += char*int(index)
+            result += char * int(index)
             index = ''
     return result
 
 
-
-with open('not_compres.txt','r') as file:
+with open('not_compres.txt', 'r') as file:
     not_compres = file.readline()
 
-result_compress= compres_rle(not_compres)    
+result_compress = compres_rle(not_compres)
 
 with open('result_compres.txt', 'w') as file:
     file.write(f'{result_compress}')
 
-   
 
-with open('compres.txt','r') as file:
-     compres = file.readline()
-result_decompress= decompress_text(compres)  
+with open('compres.txt', 'r') as file:
+    compres = file.readline()
+result_decompress = decompress_text(compres)
 
 with open('decompres.txt', 'w') as file:
-     file.write(f'{result_decompress}')
-
+    file.write(f'{result_decompress}')

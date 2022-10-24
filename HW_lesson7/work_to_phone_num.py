@@ -1,7 +1,7 @@
 
 
 
-def normalize_num_phone(number):   # + 7 1 9 8 3 4 0 4 4 7  5
+def normalize_num_phone(number): 
     if number[0:2] =='+7':
        return number
     elif number[0:1]=='8' in number:

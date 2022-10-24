@@ -10,12 +10,12 @@ for i in range(0, 21):
 
 def sort(array):
     res = []
-    res2=[]
+    res2 = []
     for i in array:
         if i % 2 == 0:
             res.append(i)
         else:
-            res2.append(i)    
+            res2.append(i)
     res2.sort()
     res.sort()
     res.extend(res2)
